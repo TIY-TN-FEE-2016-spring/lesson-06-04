@@ -1,0 +1,8 @@
+{{outlet}}
+{{#each model as |call|}}
+  <h2>
+    {{#link-to "call-info" call._id}}
+      {{call.name}}
+    {{/link-to}}
+  </h2>
+{{/each}}
