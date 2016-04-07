@@ -1,0 +1,26 @@
+{{!-- call-edit/template.hbs --}}
+
+<h2>Editing</h2>
+
+<form {{action submitCall on="submit"}}>
+  <p>
+    <label>Customer Name:</label>
+    {{input value=model.name}}
+  </p>
+  <p>
+    <label>Call Time:</label>
+    {{input value=model.callTime}}
+  </p>
+  <p>
+    <label>Call Length:</label>
+    {{input value=model.length}}
+  </p>
+  <p>
+    <label>Call Phone:</label>
+    {{input value=model.phone}}
+  </p>
+
+  <p>
+    <button>Save</button>
+  </p>
+</form>
