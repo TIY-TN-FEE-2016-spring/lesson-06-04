@@ -7,3 +7,8 @@
   <li>Call Length: {{model.length}}</li>
   <li>Phone: {{model.phone}}</li>
 </ul>
+
+<p class="links">
+  {{#link-to "index"}}Home{{/link-to}}
+  {{#link-to "call-edit" model._id}}Edit{{/link-to}}
+</p>
